@@ -1,15 +1,43 @@
+import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import classes from "./Navbar.module.scss";
-const Navbar = () => {
+
+const Navbar = (props) => {
   return (
     <div className={classes.navbar}>
       <div className={classes.wrapper}>
-        <a href="#">About</a>
+        <Link
+          activeClass="active"
+          to="about-section"
+          spy={true}
+          // smooth={true}
+          duration={500}
+        >
+          About
+        </Link>
       </div>
       <div className={classes.wrapper}>
-        <a href="#">Projects</a>
+        <Link
+          activeClass="active"
+          to="projects-section"
+          spy={true}
+          // smooth={true}
+          duration={700}
+        >
+          Projects
+        </Link>
       </div>
       <div className={classes.wrapper}>
-        <a href="#">Contact</a>
+        <Link
+          activeClass="active"
+          to="contact-section"
+          spy={true}
+          // smooth={true}
+          duration={700}
+        >
+          Contact
+        </Link>
       </div>
     </div>
   );

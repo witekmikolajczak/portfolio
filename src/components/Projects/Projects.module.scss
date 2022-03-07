@@ -1,8 +1,15 @@
 .projects {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-color: lightcyan;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.projects div:hover {
+  border: 3px solid black;
+  box-shadow: 10px 5px 5px black;
+  transition: 700ms;
 }
