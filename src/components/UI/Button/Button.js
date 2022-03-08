@@ -9,12 +9,10 @@ const Button = () => {
 
   const topFunction = () => {
     document.documentElement.scrollTop = 0;
-    console.log("clicked");
   };
 
   window.onscroll = (e) => {
     setScroll(window.scrollY);
-    console.log(scroll);
   };
 
   return (

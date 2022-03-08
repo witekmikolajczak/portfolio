@@ -8,6 +8,17 @@
   align-items: center;
 }
 
+.slide-right :first-child {
+  animation: 1s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
 .projects div:hover {
   border: 3px solid black;
   box-shadow: 10px 5px 5px black;

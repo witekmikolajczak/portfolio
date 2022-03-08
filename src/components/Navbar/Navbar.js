@@ -28,7 +28,7 @@ const Navbar = (props) => {
           Projects
         </Link>
       </div>
-      <div className={classes.wrapper}>
+      <div className={classes.wrapper} id="contact">
         <Link
           activeClass="active"
           to="contact-section"
