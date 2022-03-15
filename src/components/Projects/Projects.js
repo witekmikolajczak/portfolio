@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Main from "../UI/Main/Main";
 import Card from "../UI/Card/Card";
-
+import React from "react";
 import classes from "./Projects.module.scss";
 const Projects = () => {
   return (
