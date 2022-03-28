@@ -1,4 +1,5 @@
 import React from "react";
+
 const Weather = () => {
   return (
     <a href="https://stackoverflow.com/questions/42914666/react-router-external-link">

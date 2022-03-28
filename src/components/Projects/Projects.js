@@ -7,9 +7,13 @@ const Projects = () => {
   return (
     <div id="projects-section">
       <Main className={classes.projects}>
-        <Link to="/weather-app" className={classes["slide-right"]}>
-          <Card title="weather-app" />
-        </Link>
+        <Card
+          title={
+            <a href="https://witekmikolajczak-weather-app.herokuapp.com/">
+              Weather-app
+            </a>
+          }
+        />
         <Link to="/todo-app" className={classes["slide-right"]}>
           <Card title="todo-app" />
         </Link>
