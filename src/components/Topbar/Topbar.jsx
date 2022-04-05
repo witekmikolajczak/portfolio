@@ -8,7 +8,7 @@ export const Topbar = ({ menuOpen, setMenuOpen, ...props }) => {
         <div className={classes.left}>
           <a href="#intro" className={classes.logo}>
             {" "}
-            genius.
+            witekmikolajczak
           </a>
           <div className={classes.itemContainer}>
             <Person className={classes.icon} />

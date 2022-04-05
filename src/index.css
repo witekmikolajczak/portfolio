@@ -15,6 +15,6 @@ code {
 }
 * {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scroll-snap-align: start;
+  /* scroll-snap-type: y mandatory;
+  scroll-snap-align: start;  */
 }

@@ -1,24 +1,26 @@
+import { CloseMenu } from "./CloseMenu";
+
 import classes from "./Menu.module.scss";
 
-export const Menu = () => {
+export const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className={classes.menu}>
+    <div className={[classes.menu, menuOpen && classes.active].join(" ")}>
       <ul>
-        <li>
+        <CloseMenu setMenuOpen={setMenuOpen}>
           <a href="#intro">Home</a>
-        </li>
-        <li>
+        </CloseMenu>
+        <CloseMenu setMenuOpen={setMenuOpen}>
           <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
+        </CloseMenu>
+        {/* <CloseMenu setMenuOpen={setMenuOpen}>
           <a href="#works">Works</a>
-        </li>
-        <li>
+        </CloseMenu>
+        <CloseMenu setMenuOpen={setMenuOpen}>
           <a href="#testimonials">Testimonials</a>
-        </li>
-        <li>
+        </CloseMenu>
+        <CloseMenu setMenuOpen={setMenuOpen}>
           <a href="#contact">Contact</a>
-        </li>
+        </CloseMenu> */}
       </ul>
     </div>
   );

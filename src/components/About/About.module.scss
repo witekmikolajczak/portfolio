@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
+}
